@@ -1,0 +1,26 @@
+.text 
+{
+
+    background-color: blue;
+}
+
+p
+{
+    color: black;
+}
+
+.second
+
+{
+    color : blue;
+}
+
+.titre_de_la_page_et_description
+{
+    background-color: green;
+}
+.letitre
+{
+    font-size: 15px;
+    font-weight: 600;
+}
