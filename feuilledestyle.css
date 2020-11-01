@@ -1,20 +1,66 @@
+/*General*/
+
 @font-face {
     font-family: Raleway;
-    src: url("./fontRaleway/Raleway-Black.ttf");
-    
+    src: url("./fontRaleway");
 }
+
 
 h1 {
     font-family: Raleway;
 }
 
+body {
+    background-color:#f2f2f2
+    ;
+}
+
 p {
     font-family: Raleway;
-    font-size: 12px;
+    font-size: 16px;
     
 }
 
 a {
 font-family: Raleway;
-font-size : 20px;
+font-size : 15px;
 }
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 16px;
+    color: #181818;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+
+#inscription
+{
+    color:blue;
+}
+/* Titre et description */
