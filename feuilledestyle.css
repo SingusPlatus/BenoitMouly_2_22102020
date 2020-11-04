@@ -5,6 +5,10 @@
     src: url("./fontRaleway");
 }
 
+img {
+	max-width: 100%;
+	max-height: auto;
+}
 
 h1, h2, h3 {
     font-family: Raleway;
@@ -12,7 +16,7 @@ h1, h2, h3 {
 }
 
 body {
-    background-color:#f2f2f2;
+    background-color:#ffff;
     margin-top: 0%;
     margin-left: 3%;
     margin-bottom: 3%;
@@ -37,6 +41,19 @@ font-size : 15px;
     justify-content: space-between;
 }
 
+
+/*Icons colors*/
+
+.fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fas.fa-dog, .fas.fa-info, .fas.fa-star
+{
+    color:#0065fc;
+}
+.fas.fa-star.grey
+{
+    color: grey;
+}
+
+
 /* Navigation */
 
 nav ul
@@ -47,11 +64,6 @@ nav ul
     flex-wrap: nowrap;
     justify-content: space-between;
     column-gap: 40px;
-}
-
-nav li
-{
-    /*margin-right: 60px;*/
 }
 
 nav a
@@ -70,7 +82,7 @@ nav a:hover
 
 #inscription
 {
-    color:blue;
+    color:#0065FC;
     
 }
 /* Titre et description */
@@ -78,32 +90,104 @@ nav a:hover
     line-height: 10px;
 }
 
+/* Rechercher */
+.recherche
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type=search]
+{
+    border: none;
+}
+input[name=ville]
+{
+    font-weight: bold;
+}
+
+input[type=submit]
+{
+    border: 0px;
+    background-color: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    padding: 10px 10px 10px 10px;
+}
+
+input[value=Rechercher]
+{
+    font-weight: bold;
+    color: white;
+}
+
 /* Filtres */
-.filtres{
+
+.filtres
+{
     display:flex;
     flex-wrap: wrap;
 }
-.filtres ul{
+.filtres ul
+{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 10px;
+    column-gap: 20px;
+
+}
+button
+{
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 25px 25px 25px 25px;
+    border-color: grey;
+    border-left-color: #deebff;
+    font-weight: bold;
+    background-color: white;
+    padding: 0px 15px 0px 0px;
+
+}
+.fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fas.fa-dog
+{
+    max-height: 5px;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 80px 80px 80px 80px;
+    background-color: #deebff;
+    padding: 10px 10px 10px 10px;
 
 }
 
-/*Icons colors*/
-.fas.fa-money-bill-wave{
-    color: blue;
+/* Resultats filtres */
+
+.resultats_filtres
+{
+    display: flex;
+    flex-wrap: wrap;
 }
-.fas.fa-child{
-    color: blue;
+
+.fas.fa-info {
+    max-height: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 80px 80px 80px 80px;
+    border-color: grey;
+    background-color: #deebff;
+    padding: 10px 10px 10px 10px;
 }
-.fas.fa-heart{
-    color: blue;
+
+/*Hébergements*/
+#hebergements
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
-.fas.fa-dog{
-    color: blue;
-}
-.fas.fa-info{
-    color: blue;
+
+.auberge_la_cannebiere, .hotel_du_port
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
 }
