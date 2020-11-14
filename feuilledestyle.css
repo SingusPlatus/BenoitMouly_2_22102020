@@ -403,7 +403,8 @@ border-radius: 1rem 1rem 0 0;
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 1px;
+    font-size: auto;
 }
 
 
@@ -433,24 +434,42 @@ border-radius: 1rem 1rem 0 0;
 
 #activities{
 
-   width: 100%;
-   height: auto;
-   padding-top:20px;
+   width: auto;
+   height: 100%;
+   margin: 15px;
+   column-gap: 2.9rem;
 
 }
 
 #activities img{
 
     width: 100%;
+    border-radius: 25px 25px 0px 0px;
+    overflow: hidden;
 }
 
+.titlePart3{
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-top: 2px;
+    margin: 10px 10px 10px 10px
+}
 /*-------------------------------------------------------------------------------Activités------------------------------*/
 .masonryGallery{
 
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: auto;
     height: auto;
+    border-radius: 20px;
+    /*flex-grow:0.7;*/
+    padding: 0px 50px 0px 50px;
 }
 
 
@@ -459,7 +478,8 @@ border-radius: 1rem 1rem 0 0;
     height: 100%;
     width: 100%;
     border-radius: 25px;
-    background-color: white;
+    border: 5px solid black;
+    /*background-color: white;*/
 }
 
 .large-element{
@@ -467,71 +487,69 @@ border-radius: 1rem 1rem 0 0;
     height: 560px;
     width: 22%;
     border-radius: 25px;
+   /* border: 5px solid black;*/
 }
 
 
 .smallPictures{
 
     display: flex;
-    flex : row wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     height: 560px;
     width: 22%;
-    background-color: #C40030;
+    border-radius: 25px;
+    /*border : 5px solid black;*/
 
 }
+
+
 
 .small-element{
 
-    width: 100%;
 }
 
 
-.vieuxPort{
+
+.picVieuxPort{
 
     object-fit: cover;
     height: 500px;
-    margin-bottom: -11px;
 }
 
-.fortDePomegues{
+.picFortDePomegues{
 
     object-fit: cover;
-    object-position: 0 40%;
-    height: 250px;
-    margin-bottom: -11px;
+    object-position: 0 60%;
+    height: 280px;
 }
 
 
-.ilesDuFrioul{
+.picIlesDuFrioul{
 
     object-fit: cover;
     object-position: 0 10%;
     height: 175px;
-    margin-bottom: -11px;
 
 }
-.parcNationalDesCalanques{
+.picParcNationalDesCalanques{
 
     object-fit: cover;
     object-position: 50% 0%;
     height: 500px;
-    margin-bottom: -11px;
 
 }
-.notreDameDeLaGarde{
+.picNotreDameDeLaGarde{
 
     object-fit: cover;
-    height: 210px;
-    margin-bottom: -11px;
+    height: 225px;
 }
 
-.parcLongchamp{
-    
+.picParcLongchamp{
+
     object-fit: cover;
     object-position: 0 10%;
-    height: 210px;
-    margin-bottom: -11px;
+    height: 225px;
 }
 .column3BigPicture{
     
