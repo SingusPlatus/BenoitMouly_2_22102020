@@ -1,12 +1,12 @@
 /*----------General-----------------*/
 
-@font-face {
+@font-face{
     
     src: url("fontRaleway/Raleway-Regular.ttf");
     font-family: Raleway;
 }
 
-img {
+img{
     max-width: 100%;
 }
 
@@ -27,20 +27,33 @@ h3{
     font-size: 16px;
     font-family: Raleway;
     margin: 0;
+    
 }
 
-p {
+p{
     font-family: Raleway;
     font-size: 1rem;
     margin: 0;
     
 }
 
-a {
+
+
+a{
 
 font-family: Raleway;
 text-decoration: none;
 color: black;
+}
+
+
+
+h3:hover{
+color: #0065FC;
+}
+
+p{
+    color: black !important;
 }
 
 ul{
@@ -49,10 +62,6 @@ ul{
 body {
     background-color:#ffff;
     margin: 0px;
-    /*margin-top: 0%;
-    margin-left: 3%;
-    margin-bottom: 3%;
-    margin-right: 3%;*/
 
 }
 
@@ -64,6 +73,7 @@ body {
     justify-content: space-between;
     margin: 10px;
 }
+
 
 
 /*----------Icons colors-----------*/
@@ -101,19 +111,19 @@ nav a{
 
     font-size: 16px;
     color: #181818;
-    padding-top: 10px;
+    padding-top: 20px;
     text-decoration: none;
 }
 
 nav a:hover{
 
     color: #0065FC;
-    border-top: 5px solid #0065FC;
+    border-top: 10px solid #0065FC;
 }
 
 .registration{
 
-    color:#0065FC;
+   color:#0065FC !important;
     
 }
 
@@ -148,9 +158,9 @@ nav a:hover{
 .fas.fa-map-marker-alt{
 
     justify-content: center;
-    background-color: #DBDBDB;
+    background-color: #f2f2f2;
     border-style: solid;
-    border-color: #DBDBDB;
+    border-color: #f2f2f2;
     border-radius: 15px 0px 0px 15px;
     padding: 10px 10px 10px 10px;
 }
@@ -163,7 +173,7 @@ input[type=search]{
     border-bottom: solid;
     border-left: none;
     border-right: none;
-    border-color: #DBDBDB;
+    border-color: #f2f2f2;
     padding: 12px 12px 9px 12px;
 }
 
@@ -181,6 +191,13 @@ input[type=submit]{
     padding: 13px 10px 10px 12px;
     cursor: pointer;
     outline: none;
+    transition: .4s ease;
+    
+}
+
+input[type=submit]:hover{
+    transform: scale(1.03);
+    color: #0065fc;
 }
 
 input[value=Rechercher]{
@@ -188,43 +205,39 @@ input[value=Rechercher]{
     font-weight: bold;
     color: white;
     outline: none;
+    transition: .4s ease;
+    
 }
+
+input[value=Rechercher]:hover{
+    transform: scale(1.08);
+    color: white;
+}
+
 
 /* -----------------Filtres----------------------- */
 
 #filtersElements{
+    display: flex;
+    justify-content: start;
+    align-items: center;
     margin: 15px;
 }
 
 .filters{
 
     display:flex;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    column-gap: 10px;
 }
 
-.filters ul{
-
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 20px;
-
-}
-
-button{
-
-    font-weight: bold;
-    border: none;
-    background-color: white;
-    outline-style: none;
-    cursor: pointer;
-
-}
 
 .fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fas.fa-dog{
 
-    font-size: 15px;
+    font-size: 12px;
     justify-content: center;
     border-radius: 40px 40px 40px 40px;
     background-color: #deebff;
@@ -232,15 +245,30 @@ button{
 
 }
 
-.economique, .familial, .romantique, .animauxAutorises{
+.filterButton{
 
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 50px;
     border-style: solid;
     border-width: 1px;
     border-color: #DBDBDB;
     border-radius: 40px;
     border-left-color: #deebff;
-    outline: red;
+    transition: .4s ease;
 }
+
+.filterButton:hover{
+    transform: scale(1.03);
+    background-color: #deebff;
+}
+
+.filterButton p{
+    font-weight: 900;
+    margin-left: 2px;
+}
+
 
 /* --------------Resultats filtres------------------- */
 
@@ -311,7 +339,7 @@ button{
   justify-content: space-between;
   /*align-items: center;*/
   width: 70%;
-  background-color: #e0e0e0;
+  background-color: #f2f2f2;
   border-radius: 20px;
   flex-grow:0.7;
   row-gap: 9px;
@@ -328,7 +356,15 @@ button{
  border-radius: 20px 20px 20px 20px;
  margin : 0rem 1rem 1rem 0rem;
  padding: 0.4rem;
+ box-shadow: 0 0 1rem #0000002e;
+ transition: .4s ease;
 
+
+}
+
+.hostingCard:hover{
+    transform: scale(1.03);
+    color: #0065fc;
 }
 
 #hostings img{
@@ -346,7 +382,7 @@ border-radius: 1rem 1rem 0 0;
   text-decoration: none;
   /*padding-bottom: 0%;*/
 }
-   
+
 .titleCardHostPart{
 
     margin: 5px;
@@ -375,10 +411,14 @@ border-radius: 1rem 1rem 0 0;
     margin: 10px 10px 10px 10px;
 }
 
+
 .fas.fa-chart-line{
 
      font-size: 25px;
+ }
 
+ .fas.fa-chart-line:hover{
+     color:#0065FC;
  }
 
 .popularCard{
@@ -394,9 +434,17 @@ border-radius: 1rem 1rem 0 0;
     border-radius: 20px 20px 20px 20px;
     margin : 0rem 1rem 1rem 1rem;
     padding: 0.4rem;
+    box-shadow: 0 0 1rem #0000002e;
+    transition: .4s ease;
      
 }
 
+.popularCard:hover{
+
+    transform: scale(1.03);
+    color: #0065fc;
+
+}
 .contentTextCard{
 
     display: flex;
@@ -425,7 +473,7 @@ border-radius: 1rem 1rem 0 0;
     /*justify-content: flex-start;
     align-items: space-between;*/
     width: 20%;
-    background-color: #e0e0e0;
+    background-color: #f2f2f2;
     border-radius: 20px;
     flex-grow:0.7;
 }
@@ -456,7 +504,7 @@ border-radius: 1rem 1rem 0 0;
     width: 100%;
     align-items: center;
     padding-top: 2px;
-    margin: 10px 10px 10px 10px
+    margin: 40px 10px 40px 10px
 }
 /*-------------------------------------------------------------------------------Activités------------------------------*/
 .masonryGallery{
@@ -477,9 +525,22 @@ border-radius: 1rem 1rem 0 0;
 
     height: 100%;
     width: 100%;
+    align-items: flex-start;
     border-radius: 25px;
-    border: 5px solid black;
     /*background-color: white;*/
+    box-shadow: 0 0 1rem #0000002e;
+    transition: .4s ease;
+}
+
+.activityCard:hover{
+
+    transform: scale(1.03);
+    color: #0065fc;
+}
+
+.activityCard h3{
+    margin: 10px;
+    justify-content: flex-start;
 }
 
 .large-element{
@@ -503,11 +564,6 @@ border-radius: 1rem 1rem 0 0;
 
 }
 
-
-
-.small-element{
-
-}
 
 
 
@@ -551,14 +607,6 @@ border-radius: 1rem 1rem 0 0;
     object-position: 0 10%;
     height: 225px;
 }
-.column3BigPicture{
-    
-
-}
-
-.column4SmallPictures{
-
-}
 
 
 /*----------------------------------------------------- Footer ------------------------------------------------- */
@@ -566,7 +614,7 @@ border-radius: 1rem 1rem 0 0;
 footer{
 
     width: 100%;
-    background-color: #e0e0e0;
+    background-color: #f2f2f2;
 }
 .footerColumns{
 
@@ -579,3 +627,7 @@ footer{
     
 }
 
+footer a:hover{
+font-style: italic;
+color: #0065fc;
+}
