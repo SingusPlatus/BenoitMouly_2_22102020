@@ -85,7 +85,7 @@ body {
 
 .fas.fa-star.grey
 {
-    color: grey;
+    color: #DADADA;
 }
 
 
@@ -328,6 +328,11 @@ input[value=Rechercher]:hover{
     padding-top: 2px;
     margin: 10px 10px 10px 10px;
     font-weight: bold;
+}
+
+.showMoreLink:hover{
+
+    color : #0065FC;
 }
 
 
