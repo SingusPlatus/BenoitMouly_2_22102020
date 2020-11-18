@@ -62,7 +62,7 @@ ul{
 
 body{
     background-color:#ffff;
-    margin: 0px;
+    margin: 10px;
 
 }
 
@@ -70,7 +70,8 @@ body{
 ------------------------------------STANDARD COMPUTERS-----------------------
 ----------------------------------------------------------------------------*/
 @media screen and (min-width: 1024px){
-#header{
+
+    #header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -108,7 +109,7 @@ nav{
     flex: row wrap;
     justify-content: flex-end;
     align-items: center;
-    width: 45%;
+    width: 30%;
     
 }
 
@@ -484,7 +485,7 @@ border-radius: 1rem 1rem 0 0;
 
     height: 145px;
     object-fit: cover;
-    width: 120px;
+    width: 10%;
     border-radius: 1rem 0rem 0rem 1rem;
 }
 
@@ -796,7 +797,12 @@ color: #0065fc;
         
     }
     
-    
+    .registration{
+        flex-basis: 60%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        text-align: end;
+    }
     .registration a{
 
     color:#0065FC !important;
@@ -1342,7 +1348,7 @@ color: #0065fc;
 
 
 /*----------------------------------------------------------------------------------------------------------
--------------------------------------------------------Tablet max-width 1024px--------------------------------
+-------------------------------------------------------Tablet max-width 1023px--------------------------------
 -------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------*/
 
@@ -1409,7 +1415,7 @@ color: #0065fc;
     }*/
     
     
-    @media screen and (max-width: 1024px){  
+    @media screen and (max-width: 1023px){  
     #header{
         display: flex;
         flex-direction: row;
@@ -1479,14 +1485,16 @@ color: #0065fc;
         
     }
     
-    
+    .registration{
+        flex-basis: 60%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        text-align: end;
+    }
     .registration a{
 
     color:#0065FC !important;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 30%;
-    text-align: end;
+
     }
 
     .hosting-menu{
