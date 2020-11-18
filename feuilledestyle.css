@@ -803,8 +803,7 @@ color: #0065fc;
         font-size: 16px;
         color: #181818;
         padding-top: 20px;
-        text-decoration: none;
-        margin-bottom: ;        
+        text-decoration: none;       
     }
 
     
@@ -1436,7 +1435,7 @@ color: #0065fc;
     }*/
     
     
-    @media screen and (min-width: 768px){  
+    @media screen and (max-width: 1023px){  
     #header{
         display: flex;
         flex-direction: row;
