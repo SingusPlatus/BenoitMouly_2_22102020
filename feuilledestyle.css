@@ -64,16 +64,21 @@ body {
     margin: 0px;
 
 }
-
+/*---------------------------------------------------------------------------
+------------------------------------STANDARD COMPUTERS-----------------------
+----------------------------------------------------------------------------*/
 
 
 #header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
     margin: 10px;
-}
+    box-sizing: border-box;
 
+}
 
 
 /*----------Icons colors-----------*/
@@ -91,40 +96,50 @@ body {
 
 /* ---------------Navigation------------------------ */
 
+.logo-de-reservia{
+    flex: 0 0 60%;
+}
+
+
 nav{
 
     display: flex;
     flex: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 45%;
+    
 }
 
 nav ul{
-
+    
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
-    column-gap: 40px;
+    column-gap: 20px;
 }
 
 nav a{
 
     font-size: 16px;
     color: #181818;
-    padding-top: 20px;
+    /*padding-top: 10px;*/
     text-decoration: none;
 }
 
-nav a:hover{
+#header a:hover{
 
     color: #0065FC;
-    border-top: 10px solid #0065FC;
+    border-top: 5px solid #0065FC;
 }
 
-.registration{
+.registration a{
 
    color:#0065FC !important;
-    
+   width: 10%;
+   
 }
 
 
@@ -222,6 +237,8 @@ input[value=Rechercher]:hover{
     justify-content: start;
     align-items: center;
     margin: 15px;
+
+  
 }
 
 .filters{
@@ -233,6 +250,7 @@ input[value=Rechercher]:hover{
     align-items: center;
     column-gap: 10px;
 }
+
 
 
 .fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fas.fa-dog{
@@ -635,4 +653,192 @@ footer{
 footer a:hover{
 font-style: italic;
 color: #0065fc;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------Mobile max-width 425px--------------------------------
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 425px){
+
+    img{
+        max-width: 100%;
+    
+    }
+    
+    
+    h1{
+        font-size: 20px;
+        font-family: Raleway;
+        margin: 0;
+    }
+    
+    h2{
+        font-size: 18px;
+        font-family: Raleway;
+        margin: 0;
+    }
+    
+    h3{
+        font-size: 16px;
+        font-family: Raleway;
+        margin: 0;
+        
+    }
+    
+    p{
+        font-family: Raleway;
+        font-size: 1rem;
+        margin: 0;
+        
+    }
+    
+    
+    
+    a{
+    
+    font-family: Raleway;
+    text-decoration: none;
+    color: black;
+    }
+    
+    
+    
+    h3:hover{
+    color: #0065FC;
+    }
+    
+    p{
+        color: black !important;
+    }
+    
+    ul{
+        list-style: none;
+    }
+
+    body {
+        background-color:#ffff;
+        margin: 0px;
+    
+    }
+    
+    
+    
+    #header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+    
+    
+    
+    /*----------Icons colors-----------
+    -----------------------------------*/
+    
+    .fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fas.fa-dog, .fas.fa-info, .fas.fa-star
+    {
+        color:#0065fc;
+    }
+    
+    .fas.fa-star.grey
+    {
+        color: #DADADA;
+    }
+    
+    
+    /* ---------------Navigation------------------------
+    ----------------------------------------------------- */
+    .logo-de-reservia{
+    order: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 60%;
+    }
+
+    nav{
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        order: 2;
+        width: 100%;
+    }
+    
+   nav ul{
+    
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+  
+    nav a:hover{
+        border-bottom: solid 8px blue;
+        border-width: 100%;
+    }
+
+    nav a{
+        display: block;
+    
+        font-size: 16px;
+        color: #181818;
+        padding-top: 20px;
+        text-decoration: none;
+        
+    }
+    
+    
+    .registration{
+
+    color:#0065FC !important;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 30%;
+    text-align: end;
+    }
+
+    .hosting-menu{
+
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 45%;
+    padding: 0;
+    text-align: center;
+    }
+
+    .activities-menu{
+
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis:45%;
+    padding: 0;
+    text-align: center;
+    }
+
+    
+    
+    /* -------------Titre et description-----------------------
+    ----------------------------------------------------------- */
+    
+    #titleAndDescription{
+    
+        margin: 15px;
+    }
+    .mainTitle{
+    
+        margin-bottom: 10px;
+    }
+    
+    .mainDescription{
+    
+        margin-bottom: 20px;
+    }
+   
 }
