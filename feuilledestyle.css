@@ -61,6 +61,9 @@ ul{
 }
 
 body{
+
+    display: block;
+
     background-color:#ffff;
     margin: 10px;
 
@@ -148,7 +151,8 @@ nav a{
 /* -------------Titre et description----------------------- */
 
 #titleAndDescription{
-
+    display: flex;
+    flex-wrap: wrap;
     margin: 15px;
 }
 .mainTitle{
@@ -735,8 +739,17 @@ color: #0065fc;
         flex-wrap: wrap;
         margin: 10px;
     }
+
     
+    #header ul a{
+        border-bottom: solid 2px  #f2f2f2;
+        
+    }
     
+    #header ul a:hover{
+        color: #0065fc;
+        border-bottom: solid 2px #0065FC;
+    }
     
     /*----------Icons colors-----------
     -----------------------------------*/
@@ -782,21 +795,18 @@ color: #0065fc;
         width: 100%;
         padding: 0;
     }
-  
-    nav a:hover{
-        border-bottom: solid 8px blue;
-        border-width: 100%;
-    }
+
+
 
     nav a{
         display: block;
-    
         font-size: 16px;
         color: #181818;
         padding-top: 20px;
         text-decoration: none;
-        
+        margin-bottom: ;        
     }
+
     
     .registration{
         flex-basis: 60%;
@@ -804,6 +814,7 @@ color: #0065fc;
         flex-shrink: 0;
         text-align: end;
     }
+
     .registration a{
 
     color:#0065FC !important;
@@ -817,21 +828,29 @@ color: #0065fc;
 
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 45%;
+    flex-basis: 50%;
     padding: 0;
     text-align: center;
     }
+.hosting-menu p{
+    margin-bottom: 10px;
+}
 
+
+ 
     .activities-menu{
 
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis:45%;
+    flex-basis:50%;
     padding: 0;
     text-align: center;
     }
 
-    
+    .activities-menu p{
+        margin-bottom: 10px;
+    }
+
     
     /* -------------Titre et description-----------------------
     ----------------------------------------------------------- */
@@ -1345,11 +1364,12 @@ font-style: italic;
 color: #0065fc;
 }
    
+
 }
 
 
 /*----------------------------------------------------------------------------------------------------------
--------------------------------------------------------Tablet max-width 1023px--------------------------------
+-------------------------------------------------------Tablet min-width 768px--------------------------------
 -------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------*/
 
@@ -1416,7 +1436,7 @@ color: #0065fc;
     }*/
     
     
-    @media screen and (max-width: 1023px){  
+    @media screen and (min-width: 768px){  
     #header{
         display: flex;
         flex-direction: row;
@@ -1471,10 +1491,6 @@ color: #0065fc;
         padding: 0;
     }
   
-    nav a:hover{
-        border-bottom: solid 8px blue;
-        border-width: 100%;
-    }
 
     nav a{
         display: block;
