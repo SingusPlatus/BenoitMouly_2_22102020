@@ -152,6 +152,7 @@ nav a{
 
 #titleAndDescription{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     margin: 15px;
 }
@@ -169,33 +170,48 @@ nav a{
 /* --------------Rechercher------------------------------------- */
 
 
-.search{
+#search{
 
     display: flex;
-    flex-wrap: wrap;
-    margin: 15px;  
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin: 15px;
+    /*border : solid 10px red;  */
 }
+
+.search-form{
+    display: inline flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+    margin: 0px;
+    /*border: solid 12px blue;*/
+}
+
 
 .fas.fa-map-marker-alt{
 
     justify-content: center;
     background-color: #f2f2f2;
-    border-style: solid;
-    border-color: #f2f2f2;
+    /*border-style: solid;
+    border-color: #f2f2f2;*/
     border-radius: 15px 0px 0px 15px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
+    object-fit: cover;
 }
 
 input[type=search]{
 
-    /*border: none;*/
+    
     outline: none;
-    border-top: solid;
-    border-bottom: solid;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
     border-left: none;
     border-right: none;
     border-color: #f2f2f2;
-    padding: 12px 12px 9px 12px;
+    margin: ;
+    padding: 10px 10px 10px 10px;
 }
 
 input[name=ville]{
@@ -203,36 +219,30 @@ input[name=ville]{
     font-weight: bold;
 }
 
-input[type=submit]{
 
-    background-color: #0065FC;
-    border-style: solid;
-    border-color: #0065FC ;
-    border-radius: 0px 15px 15px 0px;
-    padding: 13px 10px 10px 12px;
-    cursor: pointer;
-    outline: none;
-    transition: .4s ease;
-    
+
+
+.textsearch{
+
+    color: #f2f2f2;
+    background-color: #0065fc;
+    border: none;
+    /*border: solid 2px #0065fc;
+    border-collapse: collapse;*/
+    border-radius : 0px 15px 15px 0px;
+    padding: 12px;
 }
 
-input[type=submit]:hover{
-    transform: scale(1.03);
-    color: #0065fc;
+
+.fasearch{
+    display: none;
+    background-color: #0065fc;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    border:none;
 }
-
-input[value=Rechercher]{
-
-    font-weight: bold;
-    color: white;
-    outline: none;
-    transition: .4s ease;
-    
-}
-
-input[value=Rechercher]:hover{
-    transform: scale(1.08);
-    color: white;
+.fas.fa-search.fa-lg{
+    color: #f2f2f2;
 }
 
 
@@ -734,7 +744,7 @@ color: #0065fc;
 @media screen and (max-width: 767px){  
     #header{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
         margin: 10px;
@@ -871,11 +881,26 @@ color: #0065fc;
     /* --------------Rechercher------------------------------------- */
 
 
-.search{
+#search{
 
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     margin: 15px;  
+}
+
+.search-form{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+ 
+    box-sizing: border-box;
+}
+
+.search-build{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
 }
 
 .fas.fa-map-marker-alt{
@@ -923,18 +948,18 @@ input[type=submit]:hover{
     color: #0065fc;
 }
 
-input[value=Rechercher]{
-
-    font-weight: bold;
-    color: white;
-    outline: none;
-    transition: .4s ease;
-    
+.textsearch{
+    display: none;
 }
 
-input[value=Rechercher]:hover{
-    transform: scale(1.08);
-    color: white;
+.fasearch{
+    background-color: #0065fc;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    border:none;
+}
+.fas.fa-search.fa-lg{
+    color: #f2f2f2;
 }
 
 
@@ -1465,7 +1490,7 @@ color: #0065fc;
     order: 0;
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 40%;
+    flex-basis: 50%;
     }
 
     nav{
@@ -1502,7 +1527,8 @@ color: #0065fc;
     }
     
     .registration{
-        flex-basis: 60%;
+        display: inline-block;
+        flex-basis:50%;
         flex-grow: 0;
         flex-shrink: 0;
         text-align: end;
@@ -1537,18 +1563,22 @@ color: #0065fc;
     ----------------------------------------------------------- */
     
     #titleAndDescription{
-    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         margin: 15px;
     }
-    .mainTitle{
-    
+    /*.mainTitle{
+
+        width: 100%;
         margin-bottom: 10px;
     }
     
     .mainDescription{
-    
+        
+        width: 100%;
         margin-bottom: 20px;
-    }
+    }*/
 
     /* --------------Rechercher------------------------------------- */
 

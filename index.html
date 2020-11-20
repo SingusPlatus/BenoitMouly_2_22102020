@@ -22,8 +22,8 @@
             <nav>
 
                 <ul>
-                    <div class="hosting-menu"><a href="#hebergements">Hébergements</a></div>
-                    <div class="activities-menu"><a href="#activites">Activités</a></div>
+                    <div class="hosting-menu"><a href="#hebergements"><p>Hébergements</p></a></div>
+                    <div class="activities-menu"><a href="#activites"><p>Activités</p></a></div>
                     <!--<li><a href="#" class ="registration"><b>S'inscrire</b></a></li>-->
                 </ul>
                
@@ -39,14 +39,19 @@
     <div class="mainDescription"><p>En plein centre ville ou en pleine nature</p></div>
     </section>
 
-<div class ="search">
-    <form method="post" action="">
-        <p>
+<section id ="search">
+    <span class="search-form">
+        <div class="search-build">
+        
 
-            <i class="fas fa-map-marker-alt"></i><input type="search" name="ville" id="ville" placeholder="Marseille, France" size="30" maxlength="10" /><input type="submit" value="Rechercher" />
-        </p>
-    </form>
-</div>
+            <i class="fas fa-map-marker-alt"></i><input type="search" name="ville" id="ville" placeholder="Marseille, France" size="30" maxlength="10" />
+            <button type="submit" class="fasearch"><i class="fas fa-search fa-lg"></i></button>
+            <button type="submit" class="textsearch">Rechercher</button>
+            
+        
+        </div>
+</span>
+</section>
 
     <section id="filtersElements">
             <div class ="filters">
