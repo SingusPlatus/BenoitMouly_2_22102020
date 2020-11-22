@@ -271,9 +271,10 @@ input[name=ville]{
 
 #filtersElements{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin: 15px;
+    column-gap: 10px;
 
   
 }
@@ -282,7 +283,7 @@ input[name=ville]{
 
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     column-gap: 10px;
@@ -312,6 +313,7 @@ input[name=ville]{
     border-radius: 40px;
     border-left-color: #deebff;
     transition: .4s ease;
+    column-gap: 10px;
 }
 
 .filterButton:hover{
@@ -320,8 +322,7 @@ input[name=ville]{
 }
 
 .filterButton p{
-    font-weight: 900;
-    margin-left: 2px;
+    font-weight: bold;
 }
 
 
@@ -333,6 +334,8 @@ input[name=ville]{
     flex-wrap: wrap;
     align-items: center;
     margin: 15px;
+    column-gap: 10px;
+   
 }
 
 .fas.fa-info{
@@ -467,7 +470,7 @@ border-radius: 1rem 1rem 0 0;
     width: 90%;
     align-items: center;
     padding-top: 2px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 20px 10px;
 }
 
 
@@ -1019,6 +1022,7 @@ color: #0065fc;
 
 .titleElement{
     margin-bottom: 10px;
+    margin-left:10px ;
 }
 .filters{
 
@@ -1027,6 +1031,7 @@ color: #0065fc;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    margin: 0px 5px 0px 5px;
     row-gap: 20px;
     column-gap: 10px;
 }
@@ -1035,7 +1040,7 @@ color: #0065fc;
 
 .fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fas.fa-dog{
 
-    font-size: 8px;
+    font-size: 13px;
     justify-content: center;
     border-radius: 20px 20px 20px 20px;
     background-color: #deebff;
@@ -1047,7 +1052,7 @@ color: #0065fc;
 
     display: flex;
     align-items: center;
-    width: 150px;
+    width: 200px;
     height: 40px;
     border-style: solid;
     border-width: 1px;
@@ -1055,10 +1060,11 @@ color: #0065fc;
     border-radius: 40px;
     border-left-color: #deebff;
     transition: 0.4s ease;
+    column-gap: 10px;
 }
 
-.filterButton:nth-of-type(4){
-    flex: 0 60%;
+.filterButton:nth-of-type(3){
+    flex: 0 50%;
 }
 
 .filterButton:nth-of-type(2){
@@ -1066,16 +1072,16 @@ color: #0065fc;
 }
 
 .filterButton:nth-of-type(1){
-    flex: 0 45%;
+    flex: 0 55%;
 }
+
 .filterButton:hover{
     transform: scale(1.03);
     background-color: #deebff;
 }
 
 .filterButton p{
-    font-weight: 900;
-    margin-left: 2px;
+    font-weight: bold;
 }
 
 
@@ -1088,6 +1094,7 @@ color: #0065fc;
     flex-wrap: nowrap;
     align-items: center;
     margin: 15px;
+    column-gap: 10px;
 }
 
 .fas.fa-info{
@@ -1125,7 +1132,7 @@ color: #0065fc;
     width: 100%;
     align-items: center;
     padding-top: 2px;
-    margin: 10px 10px 10px 10px;
+    margin: 30px 10px 20px 10px;
 }
 
 
@@ -1138,7 +1145,7 @@ color: #0065fc;
     width: 90%;
     align-items: center;
     padding-top: 2px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 20px 10px;
     font-weight: bold;
 }
 
@@ -1237,7 +1244,7 @@ border-radius: 1rem 1rem 0 0;
     width: 100%;
     align-items: center;
     padding-top: 2px;
-    margin: 10px 10px 10px 10px;
+    margin: 30px 10px 20px 10px;
 }
 
 
@@ -1325,7 +1332,7 @@ border-radius: 1rem 1rem 0 0;
     width: 100%;
     align-items: center;
     padding-top: 2px;
-    margin: 40px 10px 40px 10px
+    margin: 30px 10px 20px 10px
 }
 /*-------------------------------------------------------------------------------Activités------------------------------*/
 .masonryGallery{
@@ -1453,6 +1460,7 @@ footer{
     row-gap: 30px;
     line-height: 30px;
     justify-content:flex-start;
+    margin: 10px;
     
     
 }
@@ -1785,9 +1793,10 @@ color: #0065fc;
 
 #filtersElements{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     margin: 15px;
+    column-gap: 10px;
 
   
 }
@@ -1796,10 +1805,11 @@ color: #0065fc;
 
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
     column-gap: 10px;
+    row-gap: 20px;
 }
 
 
@@ -1826,7 +1836,11 @@ color: #0065fc;
     border-radius: 40px;
     border-left-color: #deebff;
     transition: .4s ease;
+    column-gap: 10px;
 }
+
+
+
 
 .filterButton:hover{
     transform: scale(1.03);
@@ -1834,8 +1848,7 @@ color: #0065fc;
 }
 
 .filterButton p{
-    font-weight: 900;
-    margin-left: 2px;
+    font-weight: bold;
 }
 
 
@@ -1847,6 +1860,7 @@ color: #0065fc;
     flex-wrap: wrap;
     align-items: center;
     margin: 15px;
+    column-gap: 10px;
 }
 
 .fas.fa-info{
@@ -1883,7 +1897,7 @@ color: #0065fc;
     width: 100%;
     align-items: center;
     padding-top: 2px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 20px 10px;
 }
 
 
@@ -1998,7 +2012,7 @@ border-radius: 1rem 1rem 0 0;
     width: 100%;
     align-items: center;
     padding-top: 2px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 20px 10px;
 }
 
 
@@ -2201,7 +2215,7 @@ border-radius: 1rem 1rem 0 0;
 /*----------------------------------------------------- Footer ------------------------------------------------- */
 
 footer{
-    
+
     width: 100%;
     background-color: #f2f2f2;
 }
@@ -2216,6 +2230,7 @@ footer{
     row-gap: 30px;
     line-height: 30px;
     justify-content:flex-start;
+    margin: 10px 0px 10px 10px;
     
     
 }
