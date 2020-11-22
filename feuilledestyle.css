@@ -550,6 +550,7 @@ border-radius: 1rem 1rem 0 0;
    width: auto;
    height: 100%;
    margin: 15px;
+   margin: 0px 0px 50px 0px;
    column-gap: 2.9rem;
 
 }
@@ -1312,7 +1313,7 @@ border-radius: 1rem 1rem 0 0;
 
    width: 100%;
    height: 100%;
-   
+   margin: 0px 0px 40px 0px;
    column-gap: 2.9rem;
 
 }
@@ -2081,7 +2082,7 @@ border-radius: 1rem 1rem 0 0;
 
    width: 100%;
    height: 100%;
-   margin: 15px;
+   margin: 0px 0px 40px 0px;
    column-gap: 2.9rem;
 
 }
