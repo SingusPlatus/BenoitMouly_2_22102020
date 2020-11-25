@@ -118,6 +118,11 @@ body{
     flex: 0 0 60%;
 }
 
+.logo-de-reservia a:hover{
+
+    border-top: none !important;
+}
+
 
 nav{
 
@@ -806,6 +811,11 @@ body{
     flex-basis: 40%;
 }
 
+.logo-de-reservia a:hover{
+
+    border-top: none !important;
+}
+
 nav{
     
     display: flex;
@@ -913,18 +923,18 @@ nav a{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
     
 .search-form{
 
-    display: inline flex;
+    display: inline-flex;
     justify-content: flex-start;
     align-items: center;
     max-width: 100%;
     border: solid 1px #f2f2f2;
     border-radius: 15px;
-    margin: 0px;
+    margin: 15px;
 }
     
     
@@ -1519,6 +1529,11 @@ footer a:hover{
     flex-basis: 40%;
 }
 
+.logo-de-reservia a:hover{
+
+    border-top: none !important;
+}
+
 nav{
     
     display: flex;
@@ -1635,13 +1650,13 @@ nav a{
     
 .search-form{
 
-    display: inline flex;
+    display: inline-flex;
     justify-content: flex-start;
     align-items: center;
     max-width: 100%;
     border: solid 1px #f2f2f2;
     border-radius: 15px;
-    margin: 0px;
+    margin: 15px;
 }
     
     
@@ -2162,7 +2177,7 @@ footer a:hover{
 }
 
 .footerContent{
-    
+
     margin-top: 20px;
 }
    
